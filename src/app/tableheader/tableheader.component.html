@@ -1,0 +1,23 @@
+<mat-table [dataSource]="dataSource">
+  <ng-container matColumnDef="column1"> 
+      <mat-header-cell *matHeaderCellDef><select name="cars" id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select> </mat-header-cell>
+      <mat-cell *matCellDef="let row">
+        {{row.column1}}
+      </mat-cell>
+  </ng-container> 
+  <ng-container matColumnDef="column2"> 
+      <mat-header-cell *matHeaderCellDef> column 2 </mat-header-cell>
+      <mat-cell *matCellDef="let row">
+        {{row.column2}}
+      </mat-cell>
+  </ng-container>
+  <mat-header-row *matHeaderRowDef="displayedColumns">
+  </mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns;">
+  </mat-row>
+</mat-table>

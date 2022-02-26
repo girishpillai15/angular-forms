@@ -1,0 +1,56 @@
+.flex-container{
+  display: flex;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+
+.items{
+  flex-basis: 50%;
+}
+
+.input-div{
+  display: flex;
+  margin-top: 30%;
+  align-items: center;
+  flex-direction: column;  
+  width: 100%;
+}
+.items-bg{
+  flex-basis: 50%;
+}
+
+.inp{
+  width: 30em;
+}
+.btn{
+  width: 18em;
+}
+@media screen and (max-width: 600px) {
+  .items-bg{
+    display: none;
+  }
+  .items{
+    flex-basis:100%;
+  }
+  .inp{
+    width: 30em;
+  }
+  .btn{
+    width: 20em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .items-bg{
+    display: none;
+  }
+  .items{
+    flex-basis:100%;
+  }
+  .inp{
+    width: 24em;
+  }
+  .btn{
+    width: 20em;
+  }
+}
